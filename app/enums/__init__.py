@@ -3,9 +3,8 @@ from .contractType import ContractType
 from .gender import Gender
 from .tokenStatus import TokenStatus
 from .roleType import RoleType
-from .matchyConditionProprety import ConditionProperty
 from .matchyComparer import Comparer
-
+from .matchyConditionProperty import ConditionProperty
 from .matchyFieldType import FieldType
-
+from .emailTemplate import EmailTemplate
 from .basicEnum import BasicEnum

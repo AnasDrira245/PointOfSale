@@ -6,4 +6,4 @@ class Comparer(Enum):
     lt = "lt"
     lte = "lte"
     e = "e"
-    in_ = "in"   
+    _in = "in"

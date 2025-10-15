@@ -1,17 +1,15 @@
-
 from enum import Enum
 
-class BasicEnum(str,Enum):
-
+class BasicEnum(str, Enum):
     @classmethod
     def getPossibleValues(cls):
         return [val.value for val in cls]
     
-    def is_valid_enum_value(cls,filed):
-        for val  in cls:
-            if val.value.upper() == filed.strip().upper():
+    @classmethod
+    def is_valid_enum_value(cls, field):
+        for val in cls:
+            if field.strip().upper() == val.value.upper():
                 return val
             
         return None
-    
     
